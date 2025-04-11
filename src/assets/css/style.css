@@ -1,5 +1,6 @@
   body {
     background: linear-gradient(to bottom, slateblue 80%, #9890cf 100%);
+    background-color: slateblue;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
@@ -112,7 +113,7 @@
     text-align: left;
     font-size: 13px;
     font-weight: bold;
-    background-color: #9890cf;;
+    background-color: #9890cf;
     color: white;
     width: fit-content;
     padding: 8px;
@@ -132,7 +133,7 @@
   }
 
   details[open]:hover {
-    background-color: white; 
+    background-color: white;
     color: slateblue;
   }
 
@@ -208,7 +209,9 @@
     padding: 60px;
   }
 
-  .left p, .left h3, .left summary {
+  .left p,
+  .left h3,
+  .left summary {
     text-align: left;
     font-size: 16px;
   }
@@ -230,11 +233,12 @@
     border: 15px lightsteelblue solid;
   }
 
-  p > strong {
+  p>strong {
     text-decoration: underline;
   }
 
-  .margin-left h3, .margin-left p {
+  .margin-left h3,
+  .margin-left p {
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -331,7 +335,7 @@
       margin-bottom: 10px;
     }
 
-    .left > p{
+    .left>p {
       text-align: left;
       padding-left: 20px;
       font-size: 16px;
@@ -367,8 +371,19 @@
       padding-top: 5px;
       background-color: slateblue;
     }
-    
+
     details:hover {
       transform: scale(1.02);
+    }
+  }
+
+  @media screen and (orientation: landscape) and (max-height: 500px) {
+    body {
+      margin: 0 1.8rem;
+    }
+
+    details {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
     }
   }
