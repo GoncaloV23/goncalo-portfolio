@@ -12,7 +12,7 @@ This website was created entirely by me, from the ground up. I made sure it's re
 
 - **Responsive Design**: The website adapts to any screen size, ensuring a seamless experience on both desktop and mobile devices.
 - **Personal Showcase**: Highlights of my skills, experiences, and projects.
-- **Interactive**:: Includes features like simple animations.
+- **Interactive**: Includes features like simple animations.
 
 ## Technologies Used
 
