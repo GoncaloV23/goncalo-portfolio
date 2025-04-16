@@ -59,7 +59,7 @@
   .container-list>li>ul {
     flex-basis: 45%;
     padding: 20px;
-    margin: 0 100px 0 0;
+    margin: 0 40px 0 0;
   }
 
   .container-list>li {
@@ -209,6 +209,10 @@
     padding: 60px;
   }
 
+  li>ul>li>ul>li {
+    list-style-type: disc;
+  }
+
   .left p,
   .left h3,
   .left summary {
@@ -254,6 +258,10 @@
     float: right;
   }
 
+  ul {
+    padding-inline-start: 1rem;
+  }
+
   .wrapper {
     min-height: 100vh;
     display: flex;
@@ -276,6 +284,12 @@
 
   @media (min-width: 3500px) {
     a:hover {
+      transform: scale(1.00);
+    }
+  }
+
+  @media (max-width: 1000px) {
+    details:hover {
       transform: scale(1.00);
     }
   }
