@@ -1,0 +1,22 @@
+/* ──────────────── 404.css ──────────────── */
+/* specific rules for 404 page */
+
+a.small {
+  display: inline;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.large {
+  font-size: 1.5rem;
+}

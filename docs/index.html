@@ -6,28 +6,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description"
-    content="Gonçalo Vieira | Software Developer. This is my portfolio website, to showcase my skills, experience and projects and also talk a little bit about me.">
+    content="This is my portfolio website, to showcase my skills, experience and projects and also talk a little bit about me.">
   <meta name="keywords"
-    content="Gonçalo Vieira, Software Developer, Computer Engineering, Programming, Data Structures, Algorithms, Projects">
+    content="Gonçalo Vieira, Software Developer, Computer Engineering, Programming, Data Structures, Algorithms, About Me">
   <meta name="author" content="Gonçalo Vieira">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Gonçalo Vieira | Software Developer">
   <meta property="og:description"
-    content="Gonçalo Vieira | Software Developer. This is my portfolio website, to showcase my skills, experience and projects and also talk a little bit about me.">
-  <meta property="og:image" content="https://goncalov23.github.io/goncalo-portfolio/src/assets/img/profile.png">
+    content="This is my portfolio website, to showcase my skills, experience and projects and also talk a little bit about me.">
+  <meta property="og:image" content="https://goncalov23.github.io/goncalo-portfolio/img/profile.png">
   <meta property="og:url" content="https://goncalov23.github.io/goncalo-portfolio/">
   <meta property="og:type" content="website">
 
   <meta name="theme-color" content="slateblue">
 
   <!-- Favicon Links -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/img/favicon-16x16.png">
-  <link rel="icon" href="./src/assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="icon" href="./img/favicon.ico">
 
   <!-- External Stylesheet -->
-  <link rel="stylesheet" href="./src/assets/css/style.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 
   <!-- Ionicons Scripts -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -38,16 +40,16 @@
   <div class="wrapper">
     <header>
       <nav class="container">
-        <div class="item zoom"><a class="active" href="#">Home</a></div>
-        <div class="item zoom"><a href="./src/pages/skills.html">Skills</a></div>
-        <div class="item zoom"><a href="./src/pages/experience.html">Experience</a></div>
-        <div class="item zoom"><a href="./src/pages/projects.html">Projects</a></div>
+        <div class="item zoom"><a class="active" onclick="event.preventDefault()" href="#">Home</a></div>
+        <div class="item zoom"><a href="./skills.html">Skills</a></div>
+        <div class="item zoom"><a href="./experience.html">Experience</a></div>
+        <div class="item zoom"><a href="./projects.html">Projects</a></div>
       </nav>
     </header>
     <main>
       <div class="container-main">
         <div class="item-main">
-          <img class="profile" src="./src/assets/img/profile.png" alt="Portrait of Gonçalo Vieira">
+          <img class="profile" src="./img/profile.png" alt="Portrait of Gonçalo Vieira">
           <h1>Gonçalo da Silva Vieira</h1>
           <h2>I am a <strong>Software Engineer</strong>!</h2>
           <p>Welcome to my website, feel free to know me a little better!</p>
@@ -77,7 +79,7 @@
               organization
               and efficiency in <strong>software projects</strong>.
             </p>
-            <img id="text-img" src="./src/assets/img/programming.png" alt="Programmer coding">
+            <img id="text-img" src="./img/programming.png" alt="Programmer coding">
             <p>&nbsp;&nbsp;I am passionate about solving complex problems, particularly in the area of data
               structures
               and algorithms <strong>(DSA)</strong>. In my free time, I enjoy honing these skills, which keeps my

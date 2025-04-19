@@ -1,0 +1,132 @@
+/* ────────── responsive.css ────────── */
+/* media‑query rules */
+
+
+/* ────────── responsive.css ────────── */
+/* your original media‑queries, untouched */
+
+@media (min-width: 2000px) {
+    .zoom:hover {
+        transform: scale(1.001);
+    }
+}
+
+@media (min-width: 3500px) {
+    a:hover {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1000px) {
+    details:hover {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .item-main {
+        width: 100%;
+        padding: 1.25rem 0;
+    }
+
+    .item {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .profile {
+        width: 6.25rem;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-links {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .container-links a {
+        max-width: 100%;
+        margin: 0.625rem auto;
+    }
+
+    a {
+        width: 90%;
+        font-size: 1.125rem;
+        margin: 0.3125rem auto;
+        transition: transform 0.5s ease;
+    }
+
+    a:hover {
+        background-color: grey;
+        color: white;
+        transform: scale(1.05);
+    }
+
+    #readjust {
+        margin-bottom: 0.625rem;
+    }
+
+    .left>p {
+        text-align: left;
+        padding-left: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .zoom:hover {
+        transform: scale(1.02);
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-footer a {
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .flex-footer a {
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: static;
+        top: 0;
+        z-index: 2;
+        padding-top: 0.3125rem;
+        background-color: var(--color-primary);
+    }
+
+    details:hover {
+        transform: scale(1.02);
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    body {
+        margin: 0 1.8rem;
+    }
+
+    details {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+}
