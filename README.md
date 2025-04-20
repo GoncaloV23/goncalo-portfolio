@@ -21,4 +21,5 @@ This website was created entirely by me, from the ground up. I made sure it's re
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+© 2025 Gonçalo Vieira. All rights reserved.  
+This project is proprietary and **not** licensed for reuse, distribution, or modification.
