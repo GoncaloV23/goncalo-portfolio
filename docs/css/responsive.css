@@ -67,7 +67,6 @@
 
     .container-list>li {
         flex-basis: 100%;
-        margin: -0.125rem 0.625rem;
     }
 
     a {
