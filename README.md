@@ -2,11 +2,11 @@
 
 ## Welcome to my personal website! 
 
-This is where I showcase my skills, projects, and a little bit about myself. It is designed to give visitors an insight into my work and help them get to know me better.
+This is where I showcase my skills, projects and a little bit about myself. It is designed to give visitors an insight into my work and help them get to know me better.
 
 ## About the Project
 
-This website was created entirely by me, from the ground up. I made sure it's responsive and mobile-friendly so that it's easily accessible on all devices.
+This website was created entirely by me, from the ground up. I ensured it’s fully responsive and adapts perfectly to all screen sizes and devices.
 
 ## Features
 
@@ -18,6 +18,7 @@ This website was created entirely by me, from the ground up. I made sure it's re
 
 - HTML
 - CSS
+- JavaScript
 
 ## License
 

@@ -1,0 +1,22 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const mobileNav = document.querySelector(".mobile-nav");
+    const icon = hamburger.querySelector("ion-icon");
+
+    function toggleMenu() {
+        const isOpen = mobileNav.classList.toggle("open");
+        mobileNav.setAttribute('aria-hidden', String(!isOpen));
+    }
+
+    hamburger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleMenu();
+    });
+
+    document.addEventListener("click", (e) => {
+        if (mobileNav.classList.contains("open") &&
+            !mobileNav.contains(e.target)) {
+            toggleMenu();
+        }
+    });
+});

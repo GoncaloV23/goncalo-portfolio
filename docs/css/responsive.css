@@ -118,13 +118,30 @@
     header {
         position: static;
         top: 0;
-        z-index: 2;
+        z-index: 5;
         padding-top: 0.3125rem;
         background-color: var(--color-primary);
     }
 
     details:hover {
         transform: scale(1.02);
+    }
+
+    .desktop-nav {
+        display: none !important;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-menu-items .zoom:hover,
+    .mobile-menu-items a:hover {
+        transform: scale(1);
     }
 }
 

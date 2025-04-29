@@ -20,6 +20,10 @@
     border-radius: 0.625rem;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(to bottom, var(--color-primary) 80%, var(--color-secondary) 100%);
     background-color: var(--color-primary);
@@ -78,7 +82,7 @@ details {
     padding: 0.625rem;
     margin: 0.625rem 0.625rem 0 0.625rem;
     border-radius: 0.625rem;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
 details a {

@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description"
     content="Explore my professional experience, including internships and hands-on projects in software development.">
-  <meta name="keywords"
-    content="Gonçalo Vieira, Software Developer, Computer Engineering, Interships, Experience">
+  <meta name="keywords" content="Gonçalo Vieira, Software Developer, Computer Engineering, Interships, Experience">
   <meta name="author" content="Gonçalo Vieira">
 
   <!-- Open Graph Meta Tags -->
@@ -34,16 +33,33 @@
   <!-- Ionicons Scripts -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="./scripts/hamburger-menu.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-      <nav class="container">
+      <!-- Mobile hamburger trigger -->
+      <button class="hamburger" aria-label="Toggle menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <!-- Desktop navigation -->
+      <nav class="container desktop-nav">
         <div class="item zoom"><a href="./">Home</a></div>
         <div class="item zoom"><a href="./skills.html">Skills</a></div>
         <div class="item zoom"><a class="active" onclick="event.preventDefault()" href="#">Experience</a></div>
         <div class="item zoom"><a href="./projects.html">Projects</a></div>
+      </nav>
+
+      <!-- Mobile slide-in navigation -->
+      <nav class="mobile-nav" aria-hidden="true">
+        <div class="mobile-menu-items">
+          <div class="item zoom"><a href="./">Home</a></div>
+          <div class="item zoom"><a href="./skills.html">Skills</a></div>
+          <div class="item zoom"><a class="active" onclick="event.preventDefault()" href="#">Experience</a></div>
+          <div class="item zoom"><a href="./projects.html">Projects</a></div>
+        </div>
       </nav>
     </header>
     <main>
