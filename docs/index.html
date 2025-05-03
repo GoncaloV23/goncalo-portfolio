@@ -34,7 +34,7 @@
   <!-- Ionicons Scripts -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="./scripts/hamburger-menu.js"></script>
+  <script src="./scripts/hamburger-menu.js" defer></script>
 </head>
 
 <body>
@@ -47,10 +47,10 @@
 
       <!-- Desktop navigation -->
       <nav class="container desktop-nav">
-        <div class="item zoom"><a class="active" onclick="event.preventDefault()" href="#">Home</a></div>
-        <div class="item zoom"><a href="./skills.html">Skills</a></div>
-        <div class="item zoom"><a href="./experience.html">Experience</a></div>
-        <div class="item zoom"><a href="./projects.html">Projects</a></div>
+        <div class="item zoom"><a class="active box-shadow" onclick="event.preventDefault()" href="#">Home</a></div>
+        <div class="item zoom"><a class="box-shadow" href="./skills.html">Skills</a></div>
+        <div class="item zoom"><a class="box-shadow" href="./experience.html">Experience</a></div>
+        <div class="item zoom"><a class="box-shadow" href="./projects.html">Projects</a></div>
       </nav>
 
       <!-- Mobile slide-in navigation -->
@@ -72,7 +72,7 @@
           <p>Welcome to my website, feel free to know me a little better!</p>
           <br>
           <section class="container-links">
-            <a href="https://drive.google.com/file/d/1R6cviEJq8m_x6HNaoiT7fz49UTfdv17x/view?usp=sharing"
+            <a href="https://drive.google.com/file/d/1cYbuhl76eEiaZRBHwSqwFRX0dToizwhr/view?usp=sharing"
               target="_blank"><ion-icon name="person"></ion-icon> Resume</a>
             <a class="important" href="mailto:goncav3@gmail.com"><ion-icon name="mail-outline"></ion-icon> Contact
               me</a>
@@ -84,9 +84,9 @@
           </section>
         </div>
         <div class="item-main left">
-          <h1>About me 👨‍💻</h1>
+          <h1 class="bg box-shadow">About me 👨‍💻</h1>
           <br>
-          <div class="highlighted">
+          <div class="highlighted box-shadow">
             <p>&nbsp;&nbsp;I hold a Bachelor's degree in <strong>Computer Engineering</strong> and have
               completed two internships,
               where I gained hands-on experience in <strong>software development</strong> and process optimization.

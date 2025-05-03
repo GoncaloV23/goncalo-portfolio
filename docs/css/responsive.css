@@ -82,6 +82,10 @@
         transform: scale(1.05);
     }
 
+    details.box-shadow {
+        box-shadow: none;
+    }
+
     #readjust {
         margin-bottom: 0.625rem;
     }

@@ -100,7 +100,7 @@ header {
 }
 
 .item-main {
-    flex-basis: 45%;
+    flex: 1;
     padding: 3.75rem;
 }
 
@@ -109,7 +109,7 @@ header {
 }
 
 .item-footer {
-    flex-basis: 45%;
+    flex: 1;
     padding: 3.75rem;
 }
 

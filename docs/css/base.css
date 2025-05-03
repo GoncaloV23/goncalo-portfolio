@@ -54,9 +54,24 @@ a:hover {
     transform: scale(1.04);
 }
 
+a.box-shadow,
+div.box-shadow,
+details.box-shadow,
+h1.box-shadow  {
+    box-shadow: 0.3rem 0.3rem 0.5rem #00000080;
+}
+
 .active {
     background-color: grey;
     color: white;
+}
+
+.bg {
+    padding: 1rem 2rem;
+    border-radius: 0.625rem;
+    background-color: var(--color-secondary);
+    width: fit-content;
+    margin: 0 auto;
 }
 
 h1 {
