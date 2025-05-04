@@ -69,6 +69,10 @@
         flex-basis: 100%;
     }
 
+    .container-list>li:hover {
+        transform: none;
+    }
+
     a {
         width: 90%;
         font-size: 1.125rem;
@@ -79,7 +83,7 @@
     a:hover {
         background-color: grey;
         color: white;
-        transform: scale(1.05);
+        transform: scale(1);
     }
 
     details.box-shadow {
@@ -97,7 +101,7 @@
     }
 
     .zoom:hover {
-        transform: scale(1.02);
+        transform: scale(1);
     }
 
     .container-footer {
@@ -128,7 +132,7 @@
     }
 
     details:hover {
-        transform: scale(1.02);
+        transform: scale(1);
     }
 
     .desktop-nav {
@@ -141,11 +145,6 @@
 
     .mobile-nav {
         display: block;
-    }
-
-    .mobile-menu-items .zoom:hover,
-    .mobile-menu-items a:hover {
-        transform: scale(1);
     }
 }
 
