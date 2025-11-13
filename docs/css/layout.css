@@ -1,6 +1,11 @@
 /* ───────────── layout.css ───────────── */
 /* flex containers and section‑specific rules */
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper {
     min-height: 100vh;
     display: flex;
@@ -140,8 +145,8 @@ header {
     transition: left 0.7s ease;
     z-index: 5;
     box-shadow: 0.5rem 0 0.5rem #00000080;
-    border-right: 5px solid var(--color-secondary);
-    border-bottom: 5px solid var(--color-secondary);
+    border-right: 0.3125rem solid var(--color-secondary);
+    border-bottom: 0.3125rem solid var(--color-secondary);
     border-radius: 0 0.3rem 0.3rem 0;
 }
 
@@ -150,13 +155,13 @@ header {
 }
 
 .mobile-menu-items .item {
-    border-top: 5px solid var(--color-secondary);
-    border-left: 5px solid var(--color-secondary);
+    border-top: 0.3125rem solid var(--color-secondary);
+    border-left: 0.3125rem solid var(--color-secondary);
     border-radius: 0;
 }
 
 .mobile-menu-items .item:last-child {
-    border-bottom: 5px solid var(--color-secondary);
+    border-bottom: 0.3125rem solid var(--color-secondary);
 }
 
 .mobile-menu-items .item a {

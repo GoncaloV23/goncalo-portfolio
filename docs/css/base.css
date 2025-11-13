@@ -128,6 +128,14 @@ details[open]:hover {
     color: var(--color-primary);
 }
 
+details summary div {             
+    color: var(--color-secondary); 
+}
+
+details:hover summary div {
+    color: white;
+}
+
 summary {
     font-weight: bold;
     cursor: pointer;
