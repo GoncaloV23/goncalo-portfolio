@@ -44,6 +44,17 @@ header nav.desktop-nav .item {
   flex: 1 1 0;
 }
 
+.logo img {
+  height: 3rem;
+  width: auto;
+  margin-left: 0.5rem;
+}
+
+.logo a {
+  all: unset;          
+  display: inline-block; 
+}
+
 .section-container {
   display: flex;
   flex-direction: row;
