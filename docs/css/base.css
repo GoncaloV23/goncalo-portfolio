@@ -125,12 +125,17 @@ details p {
   font-weight: bold;
   color: var(--color-secondary);
 }
+details p a {
+  display: inline-block;   
+  vertical-align: middle; 
+  margin-top: 0;
+}
 
 details[open] {
   width: 80vw;
 }
 
-details[open] summary::before {
+details[open] .arrow {
   transform: rotate(90deg);
 }
 
@@ -168,6 +173,7 @@ summary {
 }
 
 summary .arrow {
+  margin-top: 0.3rem;
   margin-right: 0.5rem;
   transition: transform 0.3s ease;
 }
@@ -179,7 +185,7 @@ summary .arrow {
   align-items: center;
 }
 
-.summary-content .title {
+.title {
   color: var(--color-primary);
   font-size: 1.25rem;
   font-weight: bold;
@@ -192,7 +198,6 @@ summary .arrow {
 }
 
 summary::before {
-  content: "▶";
   margin-right: 0.5rem;
   transition: transform 0.3s ease;
 }
