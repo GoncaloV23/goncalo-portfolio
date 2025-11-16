@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Gonçalo Vieira | Software Developer</title>
@@ -35,20 +35,35 @@
 
     <meta name="theme-color" content="slateblue" />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-M7D3FFYGNY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      Fgtag("js", new Date());
+
+      gtag("config", "G-M7D3FFYGNY");
+    </script>
+
     <!-- Favicon Links -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="img/favicon-32x32.png"
+      href="img/icons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="img/favicon-16x16.png"
+      href="img/icons/favicon-16x16.png"
     />
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="icon" href="img/icons/favicon.ico" />
 
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="css/base.css" />
@@ -448,327 +463,495 @@
               <h1 class="bg box-shadow">Projects 📁</h1>
               <br />
               <section class="margin-left">
-                <details class="box-shadow">
+                <details class="box-shadow project-card">
                   <summary>
-                    <span class="arrow"
-                      ><ion-icon name="caret-forward-outline"></ion-icon></span
-                    ><span class="title">EasyFitHub</span>
+                    <div class="project-summary-content">
+                      <img
+                        class="project-image"
+                        src="img/projects/EasyFitHub.PNG"
+                        alt="EasyFitHub screenshot"
+                      />
+                    </div>
+                    <div class="project-summary-text">
+                      <span class="arrow"
+                        ><ion-icon name="caret-forward-outline"></ion-icon
+                      ></span>
+                      <span class="title">EasyFitHub</span>
+                    </div>
                   </summary>
-                  <h3>- Repository:</h3>
-                  <p>
-                    &nbsp;&nbsp;<a
-                      href="https://github.com/GoncaloV23/EasyFitHub"
-                      target="_blank"
-                      >Click Here</a
-                    >
-                  </p>
-                  <h3>- Description:</h3>
-                  <p>
-                    &nbsp;&nbsp;A platform where gyms could register and
-                    showcase their facilities, equipment, location, and pricing,
-                    making it easier for people searching for a gym to find the
-                    best option for their needs. On the gym owner's side, the
-                    platform streamlined operations such as managing membership,
-                    offering an integrated online store within the gym's page,
-                    and providing insightful statistics to support business
-                    growth.
-                  </p>
-                  <h3>- Technologies:</h3>
-                  <p>
-                    &nbsp;&nbsp;ASP .NET, Razor (C# and HTML), CSS, JavaScript,
-                    Confluence, BitBucket, Jira, Stripe, SQLServer
-                  </p>
+                  <div class="project-body">
+                    <h3>- Repository:</h3>
+                    <p>
+                      &nbsp;&nbsp;<a
+                        href="https://github.com/GoncaloV23/EasyFitHub"
+                        target="_blank"
+                        >Click Here</a
+                      >
+                    </p>
+
+                    <h3>- Description:</h3>
+                    <p>
+                      &nbsp;&nbsp;A platform where gyms could register and
+                      showcase their facilities, equipment, location, and
+                      pricing, making it easier for people searching for a gym
+                      to find the best option for their needs. On the gym
+                      owner's side, the platform streamlined operations such as
+                      managing membership, offering an integrated online store
+                      within the gym's page, and providing insightful statistics
+                      to support business growth.
+                    </p>
+
+                    <h3>- Technologies:</h3>
+                    <div class="project-tags">
+                      <span>ASP .NET</span>
+                      <span>Razor</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                      <span>Confluence</span>
+                      <span>BitBucket</span>
+                      <span>Jira</span>
+                      <span>Stripe</span>
+                      <span>SQLServer</span>
+                    </div>
+                  </div>
                 </details>
-                <details class="box-shadow">
+                <details class="box-shadow project-card">
                   <summary>
-                    <span class="arrow"
-                      ><ion-icon name="caret-forward-outline"></ion-icon></span
-                    ><span class="title">IPSLink</span>
+                    <div class="project-summary-content">
+                      <img
+                        class="project-image"
+                        src="img/projects/IPSLink.PNG"
+                        alt="IPSLink screenshot"
+                      />
+                    </div>
+                    <div class="project-summary-text">
+                      <span class="arrow"
+                        ><ion-icon name="caret-forward-outline"></ion-icon
+                      ></span>
+                      <span class="title">IPSLink</span>
+                    </div>
                   </summary>
-                  <h3>- Repository:</h3>
-                  <p>
-                    &nbsp;&nbsp;<a
-                      href="https://github.com/GoncaloV23/IPSLink"
-                      target="_blank"
-                      >Click Here</a
-                    >
-                  </p>
-                  <h3>- Description:</h3>
-                  <p>
-                    &nbsp;&nbsp;IPSLink is a mobile application developed to
-                    facilitate communication between students and the
-                    services/departments of the Instituto Politécnico de
-                    Setúbal. The application offers features such as secure
-                    authentication, profile management, notifications, direct
-                    messaging, discussion groups and integration with academic
-                    services. In addition, it allows scheduling meetings,
-                    sending request forms, accessing the academic calendar,
-                    department contact information and an interactive campus
-                    map. IPSLink aims to improve the accessibility and
-                    efficiency of communication within the institution.
-                  </p>
-                  <h3>- Technologies:</h3>
-                  <p>&nbsp;&nbsp;Flutter, Firebase</p>
+                  <div class="project-body">
+                    <h3>- Repository:</h3>
+                    <p>
+                      &nbsp;&nbsp;<a
+                        href="https://github.com/GoncaloV23/IPSLink"
+                        target="_blank"
+                        >Click Here</a
+                      >
+                    </p>
+
+                    <h3>- Description:</h3>
+                    <p>
+                      &nbsp;&nbsp;IPSLink is a mobile application developed to
+                      facilitate communication between students and the
+                      services/departments of the Instituto Politécnico de
+                      Setúbal. The application offers features such as secure
+                      authentication, profile management, notifications, direct
+                      messaging, discussion groups and integration with academic
+                      services. In addition, it allows scheduling meetings,
+                      sending request forms, accessing the academic calendar,
+                      department contact information and an interactive campus
+                      map. IPSLink aims to improve the accessibility and
+                      efficiency of communication within the institution.
+                    </p>
+
+                    <h3>- Technologies:</h3>
+                    <div class="project-tags">
+                      <span>Flutter</span>
+                      <span>Firebase</span>
+                    </div>
+                  </div>
                 </details>
-                <details class="box-shadow">
+                <details class="box-shadow project-card">
                   <summary>
-                    <span class="arrow"
-                      ><ion-icon name="caret-forward-outline"></ion-icon></span
-                    ><span class="title">Bus Network</span>
+                    <div class="project-summary-content">
+                      <img
+                        class="project-image"
+                        src="img/projects/BusNetwork.PNG"
+                        alt="Bus Network screenshot"
+                      />
+                    </div>
+                    <div class="project-summary-text">
+                      <span class="arrow"
+                        ><ion-icon name="caret-forward-outline"></ion-icon
+                      ></span>
+                      <span class="title">Bus Network</span>
+                    </div>
                   </summary>
-                  <h3>- Repository:</h3>
-                  <p>
-                    &nbsp;&nbsp;<a
-                      href="https://github.com/GoncaloV23/Bus-Network"
-                      target="_blank"
-                      >Click Here</a
-                    >
-                  </p>
-                  <h3>- Description:</h3>
-                  <p>
-                    &nbsp;&nbsp;This project involves creating a Java
-                    application to model and visualize a bus transport network.
-                    The main goal is to allow users to interact with the
-                    network, retrieve information about bus stops and routes,
-                    calculate metrics, and modify real-time data such as route
-                    distances and durations. Additionally, the project includes
-                    generating tickets and exporting new data sets. The
-                    application will be graphically visualized using
-                    JavaFXSmartGraph, and all code was documented with Javadoc.
-                  </p>
-                  <h3>- Technologies:</h3>
-                  <p>&nbsp;&nbsp;IntelliJ (Java), JavaFX</p>
+                  <div class="project-body">
+                    <h3>- Repository:</h3>
+                    <p>
+                      &nbsp;&nbsp;<a
+                        href="https://github.com/GoncaloV23/Bus-Network"
+                        target="_blank"
+                        >Click Here</a
+                      >
+                    </p>
+
+                    <h3>- Description:</h3>
+                    <p>
+                      &nbsp;&nbsp;This project involves creating a Java
+                      application to model and visualize a bus transport
+                      network. The main goal is to allow users to interact with
+                      the network, retrieve information about bus stops and
+                      routes, calculate metrics, and modify real-time data such
+                      as route distances and durations. Additionally, the
+                      project includes generating tickets and exporting new data
+                      sets. The application will be graphically visualized using
+                      JavaFXSmartGraph, and all code was documented with
+                      Javadoc.
+                    </p>
+
+                    <h3>- Technologies:</h3>
+                    <div class="project-tags">
+                      <span>Java</span>
+                      <span>JavaFX</span>
+                      <span>IntelliJ</span>
+                    </div>
+                  </div>
                 </details>
-                <details class="box-shadow">
+                <details class="box-shadow project-card">
                   <summary>
-                    <span class="arrow"
-                      ><ion-icon name="caret-forward-outline"></ion-icon
-                    ></span>
-                    <span class="title">Knapsack Parallel Solver</span>
+                    <div class="project-summary-content">
+                      <img
+                        class="project-image"
+                        src="img/projects/KnapsackSolver.PNG"
+                        alt="Knapsack Parallel Solver screenshot"
+                      />
+                    </div>
+                    <div class="project-summary-text">
+                      <span class="arrow"
+                        ><ion-icon name="caret-forward-outline"></ion-icon
+                      ></span>
+                      <span class="title">Knapsack Parallel Solver</span>
+                    </div>
                   </summary>
-                  <h3>- Repository:</h3>
-                  <p>
-                    &nbsp;&nbsp;<a
-                      href="https://github.com/GoncaloV23/Knapsack-Parallel-Solver"
-                      target="_blank"
-                      >Click Here</a
-                    >
-                  </p>
-                  <h3>- Description:</h3>
-                  <p>
-                    &nbsp;&nbsp;This project involves the implementation of the
-                    AJ-KP-BS algorithm to solve the 0-1 knapsack problem, using
-                    parallel and concurrent programming techniques in Java. The
-                    goal is to maximize the total value of selected items while
-                    ensuring that the total weight does not exceed the
-                    knapsack's capacity. The solution includes the creation of
-                    multiple threads executing the AJ-KP-BS algorithm, sharing
-                    information about the best solutions found. Proper
-                    synchronization between threads is essential to avoid
-                    conflicts when accessing shared memory. The results are
-                    presented in tables that include the test number, test name,
-                    execution time, number of threads used, best value found,
-                    total weight of the best solution, number of iterations, and
-                    time to reach the best solution. The project is developed in
-                    Java, utilizing parallel and concurrent programming
-                    techniques such as threads and semaphores.
-                  </p>
-                  <h3>- Technologies:</h3>
-                  <p>&nbsp;&nbsp;IntelliJ (Java)</p>
+                  <div class="project-body">
+                    <h3>- Repository:</h3>
+                    <p>
+                      &nbsp;&nbsp;<a
+                        href="https://github.com/GoncaloV23/Knapsack-Parallel-Solver"
+                        target="_blank"
+                        >Click Here</a
+                      >
+                    </p>
+
+                    <h3>- Description:</h3>
+                    <p>
+                      &nbsp;&nbsp;This project involves the implementation of
+                      the AJ-KP-BS algorithm to solve the 0-1 knapsack problem,
+                      using parallel and concurrent programming techniques in
+                      Java. The goal is to maximize the total value of selected
+                      items while ensuring that the total weight does not exceed
+                      the knapsack's capacity. The solution includes the
+                      creation of multiple threads executing the AJ-KP-BS
+                      algorithm, sharing information about the best solutions
+                      found. Proper synchronization between threads is essential
+                      to avoid conflicts when accessing shared memory. The
+                      results are presented in tables that include the test
+                      number, test name, execution time, number of threads used,
+                      best value found, total weight of the best solution,
+                      number of iterations, and time to reach the best solution.
+                      The project is developed in Java, utilizing parallel and
+                      concurrent programming techniques such as threads and
+                      semaphores.
+                    </p>
+
+                    <h3>- Technologies:</h3>
+                    <div class="project-tags">
+                      <span>Java</span>
+                      <span>Parallel Programming</span>
+                      <span>IntelliJ</span>
+                    </div>
+                  </div>
                 </details>
-                <details class="box-shadow">
+                <details class="box-shadow project-card">
                   <summary>
-                    <span class="title"
-                      ><span class="arrow"
-                        ><ion-icon
-                          name="caret-forward-outline"
-                        ></ion-icon></span
-                      >Portfolio Social Network</span
-                    >
+                    <div class="project-summary-content">
+                      <img
+                        class="project-image"
+                        src="img/projects/PortfolioSocialNetwork.PNG"
+                        alt="Portfolio Social Network screenshot"
+                      />
+                    </div>
+                    <div class="project-summary-text">
+                      <span class="arrow"
+                        ><ion-icon name="caret-forward-outline"></ion-icon
+                      ></span>
+                      <span class="title">Portfolio Social Network</span>
+                    </div>
                   </summary>
-                  <h3>- Repository:</h3>
-                  <p>
-                    &nbsp;&nbsp;<a
-                      href="https://github.com/GoncaloV23/Portfolio-Social-Network"
-                      target="_blank"
-                      >Click Here</a
-                    >
-                  </p>
-                  <h3>- Description:</h3>
-                  <p>
-                    &nbsp;&nbsp;This project consists of developing a modular
-                    web application, the goal is to create a RESTful API with
-                    Node.js and Express, allowing CRUD operations on different
-                    resources. The backend interacts with a MySQL database,
-                    while the frontend uses HTML, CSS, and JavaScript to provide
-                    a user-friendly interface.
-                  </p>
-                  <h3>- Technologies:</h3>
-                  <p>
-                    &nbsp;&nbsp;Node.js, Express, MySQL, HTML, CSS, JavaScript
-                  </p>
+                  <div class="project-body">
+                    <h3>- Repository:</h3>
+                    <p>
+                      &nbsp;&nbsp;<a
+                        href="https://github.com/GoncaloV23/Portfolio-Social-Network"
+                        target="_blank"
+                        >Click Here</a
+                      >
+                    </p>
+
+                    <h3>- Description:</h3>
+                    <p>
+                      &nbsp;&nbsp;This project consists of developing a modular
+                      web application, the goal is to create a RESTful API with
+                      Node.js and Express, allowing CRUD operations on different
+                      resources. The backend interacts with a MySQL database,
+                      while the frontend uses HTML, CSS, and JavaScript to
+                      provide a user-friendly interface.
+                    </p>
+
+                    <h3>- Technologies:</h3>
+                    <div class="project-tags">
+                      <span>Node.js</span>
+                      <span>Express</span>
+                      <span>MySQL</span>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                    </div>
+                  </div>
                 </details>
-                <details class="box-shadow">
+                <details class="box-shadow project-card">
                   <summary>
-                    <span class="arrow"
-                      ><ion-icon name="caret-forward-outline"></ion-icon></span
-                    ><span class="title">Unholy Hell</span>
+                    <div class="project-summary-content">
+                      <img
+                        class="project-image"
+                        src="img/projects/UnholyHell.png"
+                        alt="Unholy Hell screenshot"
+                      />
+                    </div>
+                    <div class="project-summary-text">
+                      <span class="arrow"
+                        ><ion-icon name="caret-forward-outline"></ion-icon
+                      ></span>
+                      <span class="title">Unholy Hell</span>
+                    </div>
                   </summary>
-                  <h3>- Repository:</h3>
-                  <p>
-                    &nbsp;&nbsp;<a
-                      href="https://github.com/GoncaloV23/Unholy-Hell"
-                      target="_blank"
-                      >Click Here</a
-                    >
-                  </p>
-                  <h3>- Description:</h3>
-                  <p>
-                    &nbsp;&nbsp;The player takes control of the hero during the
-                    apocalypse. His goal is to save what remains of human
-                    civilization by collecting souls, wood and stone to build
-                    buildings and improve his abilities.
-                  </p>
-                  <h3>- Technologies:</h3>
-                  <p>&nbsp;&nbsp;Unity</p>
+                  <div class="project-body">
+                    <h3>- Repository:</h3>
+                    <p>
+                      &nbsp;&nbsp;<a
+                        href="https://github.com/GoncaloV23/Unholy-Hell"
+                        target="_blank"
+                        >Click Here</a
+                      >
+                    </p>
+
+                    <h3>- Description:</h3>
+                    <p>
+                      &nbsp;&nbsp;The player takes control of the hero during
+                      the apocalypse. His goal is to save what remains of human
+                      civilization by collecting souls, wood and stone to build
+                      buildings and improve his abilities.
+                    </p>
+
+                    <h3>- Technologies:</h3>
+                    <div class="project-tags">
+                      <span>Unity</span>
+                    </div>
+                  </div>
                 </details>
-                <details class="box-shadow">
+                <details class="box-shadow project-card">
                   <summary>
-                    <span class="arrow"
-                      ><ion-icon name="caret-forward-outline"></ion-icon
-                    ></span>
-                    <span class="title">Warehouse Simulation</span>
+                    <div class="project-summary-content">
+                      <img
+                        class="project-image"
+                        src="img/projects/WarehouseSimulation.PNG"
+                        alt="Warehouse Simulation screenshot"
+                      />
+                    </div>
+                    <div class="project-summary-text">
+                      <span class="arrow"
+                        ><ion-icon name="caret-forward-outline"></ion-icon
+                      ></span>
+                      <span class="title">Warehouse Simulation</span>
+                    </div>
                   </summary>
-                  <h3>- Repository:</h3>
-                  <p>
-                    &nbsp;&nbsp;<a
-                      href="https://github.com/GoncaloV23/Warehouse-Simulation"
-                      target="_blank"
-                      >Click Here</a
-                    >
-                  </p>
-                  <h3>- Description:</h3>
-                  <p>
-                    &nbsp;&nbsp;In this distribution center, products are
-                    received at a specific location in the warehouse, are
-                    packaged, and are then transported to the locations where
-                    they are stored. The transportation is done by Automated
-                    Guided Vehicles (AGV). The distribution of the products to
-                    the sales locations follows an identical process where
-                    stored products are taken from the storage locations and
-                    taken to a pick-up location within the warehouse.
-                  </p>
-                  <h3>- Technologies:</h3>
-                  <p>&nbsp;&nbsp;Apache NetBeans</p>
+                  <div class="project-body">
+                    <h3>- Repository:</h3>
+                    <p>
+                      &nbsp;&nbsp;<a
+                        href="https://github.com/GoncaloV23/Warehouse-Simulation"
+                        target="_blank"
+                        >Click Here</a
+                      >
+                    </p>
+
+                    <h3>- Description:</h3>
+                    <p>
+                      &nbsp;&nbsp;In this distribution center, products are
+                      received at a specific location in the warehouse, are
+                      packaged, and are then transported to the locations where
+                      they are stored. The transportation is done by Automated
+                      Guided Vehicles (AGV). The distribution of the products to
+                      the sales locations follows an identical process where
+                      stored products are taken from the storage locations and
+                      taken to a pick-up location within the warehouse.
+                    </p>
+
+                    <h3>- Technologies:</h3>
+                    <div class="project-tags">
+                      <span>Java</span>
+                      <span>Apache NetBeans</span>
+                    </div>
+                  </div>
                 </details>
-                <details class="box-shadow">
+                <details class="box-shadow project-card">
                   <summary>
-                    <span class="arrow"
-                      ><ion-icon name="caret-forward-outline"></ion-icon
-                    ></span>
-                    <span class="title">Wide World Importers</span>
+                    <div class="project-summary-content">
+                      <img
+                        class="project-image"
+                        src="img/projects/WorldWideImporters.PNG"
+                        alt="Wide World Importers screenshot"
+                      />
+                    </div>
+                    <div class="project-summary-text">
+                      <span class="arrow"
+                        ><ion-icon name="caret-forward-outline"></ion-icon
+                      ></span>
+                      <span class="title">Wide World Importers</span>
+                    </div>
                   </summary>
-                  <h3>- Repository:</h3>
-                  <p>
-                    &nbsp;&nbsp;<a
-                      href="https://github.com/GoncaloV23/Wide-World-Importers"
-                      target="_blank"
-                      >Click Here</a
-                    >
-                  </p>
-                  <h3>- Description:</h3>
-                  <p>
-                    &nbsp;&nbsp;This project aimed to restructure a relational
-                    database for the fictitious company Wide World Importers
-                    (WWI), which was transitioning from an outdated system to a
-                    new ERP. The goal was to model and normalize the existing
-                    data, integrating it into a new database called WWIGlobal
-                    for improved efficiency, integrity, and scalability.
-                  </p>
-                  <p>
-                    &nbsp;&nbsp;Normalization techniques reduced redundancy and
-                    improved data integrity, while metadata ensured proper
-                    documentation for future management. Entity-Relationship
-                    (ER) diagrams were created to guide the data structure
-                    design. The process included data migration, creation of
-                    relational tables with appropriate keys and constraints, and
-                    SQL scripting to manipulate and validate data.
-                  </p>
-                  <p>
-                    &nbsp;&nbsp;Triggers were implemented to enforce business
-                    rules, and stored procedures streamlined complex operations.
-                    Views simplified data retrieval, and indexes improved query
-                    performance. Additionally, referential integrity and
-                    transaction management ensured data consistency and
-                    reliability.
-                  </p>
-                  <h3>- Technologies:</h3>
-                  <p>&nbsp;&nbsp;SQL Server (with SSMS)</p>
+                  <div class="project-body">
+                    <h3>- Repository:</h3>
+                    <p>
+                      &nbsp;&nbsp;<a
+                        href="https://github.com/GoncaloV23/Wide-World-Importers"
+                        target="_blank"
+                        >Click Here</a
+                      >
+                    </p>
+
+                    <h3>- Description:</h3>
+                    <p>
+                      &nbsp;&nbsp;This project aimed to restructure a relational
+                      database for the fictitious company Wide World Importers
+                      (WWI), which was transitioning from an outdated system to
+                      a new ERP. The goal was to model and normalize the
+                      existing data, integrating it into a new database called
+                      WWIGlobal for improved efficiency, integrity, and
+                      scalability.
+                    </p>
+                    <p>
+                      &nbsp;&nbsp;Normalization techniques reduced redundancy
+                      and improved data integrity, while metadata ensured proper
+                      documentation for future management. Entity-Relationship
+                      (ER) diagrams were created to guide the data structure
+                      design. The process included data migration, creation of
+                      relational tables with appropriate keys and constraints,
+                      and SQL scripting to manipulate and validate data.
+                    </p>
+                    <p>
+                      &nbsp;&nbsp;Triggers were implemented to enforce business
+                      rules, and stored procedures streamlined complex
+                      operations. Views simplified data retrieval, and indexes
+                      improved query performance. Additionally, referential
+                      integrity and transaction management ensured data
+                      consistency and reliability.
+                    </p>
+
+                    <h3>- Technologies:</h3>
+                    <div class="project-tags">
+                      <span>SQL Server (SSMS)</span>
+                    </div>
+                  </div>
                 </details>
-                <details class="box-shadow">
+                <details class="box-shadow project-card">
                   <summary>
-                    <span class="title"
-                      ><span class="arrow"
-                        ><ion-icon
-                          name="caret-forward-outline"
-                        ></ion-icon></span
-                      >Sports Event Manager</span
-                    >
+                    <div class="project-summary-content">
+                      <img
+                        class="project-image"
+                        src="img/projects/SportEventManager.PNG"
+                        alt="Sports Event Manager screenshot"
+                      />
+                    </div>
+                    <div class="project-summary-text">
+                      <span class="arrow"
+                        ><ion-icon name="caret-forward-outline"></ion-icon
+                      ></span>
+                      <span class="title">Sports Event Manager</span>
+                    </div>
                   </summary>
-                  <h3>- Repository:</h3>
-                  <p>
-                    &nbsp;&nbsp;<a
-                      href="https://github.com/GoncaloV23/Sports-Event-Manager"
-                      target="_blank"
-                      >Click Here</a
-                    >
-                  </p>
-                  <h3>- Description:</h3>
-                  <p>
-                    &nbsp;&nbsp;This project involves developing a data layer to
-                    support a sports event management application. The system
-                    will manage both the sports activities and the accommodation
-                    of participants. Each team will choose a specific sport,
-                    such as individual or team-based events, and design the data
-                    structure to handle the event logistics, including
-                    participant accommodation and required materials. The focus
-                    is on implementing secure procedures to manage user creation
-                    and queries while ensuring the integrity of the data,
-                    avoiding risks like SQL injection.
-                  </p>
-                  <h3>- Technologies:</h3>
-                  <p>&nbsp;&nbsp;MySQL</p>
+                  <div class="project-body">
+                    <h3>- Repository:</h3>
+                    <p>
+                      &nbsp;&nbsp;<a
+                        href="https://github.com/GoncaloV23/Sports-Event-Manager"
+                        target="_blank"
+                        >Click Here</a
+                      >
+                    </p>
+
+                    <h3>- Description:</h3>
+                    <p>
+                      &nbsp;&nbsp;This project involves developing a data layer
+                      to support a sports event management application. The
+                      system will manage both the sports activities and the
+                      accommodation of participants. Each team will choose a
+                      specific sport, such as individual or team-based events,
+                      and design the data structure to handle the event
+                      logistics, including participant accommodation and
+                      required materials. The focus is on implementing secure
+                      procedures to manage user creation and queries while
+                      ensuring the integrity of the data, avoiding risks like
+                      SQL injection.
+                    </p>
+
+                    <h3>- Technologies:</h3>
+                    <div class="project-tags">
+                      <span>MySQL</span>
+                    </div>
+                  </div>
                 </details>
-                <details class="box-shadow">
+                <details class="box-shadow project-card">
                   <summary>
-                    <span class="arrow"
-                      ><ion-icon name="caret-forward-outline"></ion-icon></span
-                    ><span class="title">Horse Game</span>
+                    <div class="project-summary-content">
+                      <img
+                        class="project-image"
+                        src="img/projects/HorseGame.PNG"
+                        alt="Sports Event Manager screenshot"
+                      />
+                    </div>
+                    <div class="project-summary-text">
+                      <span class="arrow"
+                        ><ion-icon name="caret-forward-outline"></ion-icon
+                      ></span>
+                      <span class="title">Horse Game</span>
+                    </div>
                   </summary>
-                  <h3>- Repository:</h3>
-                  <p>
-                    &nbsp;&nbsp;<a
-                      href="https://github.com/GoncaloV23/Horse-Game"
-                      target="_blank"
-                      >Click Here</a
-                    >
-                  </p>
-                  <h3>- Description:</h3>
-                  <p>
-                    &nbsp;&nbsp;The Horse Game is a variant of the Knight’s Tour
-                    problem, where the goal is to move a knight across a 10x10
-                    chessboard, visiting each square exactly once. Each square
-                    has a score, and the aim is to maximize the total score by
-                    finding the best path.
-                  </p>
-                  <p>
-                    &nbsp;&nbsp;This project includes two key features, players
-                    move the knight to visit all squares while maximizing the
-                    score, an AI uses state space search to find the optimal
-                    path that visits all squares and maximizes the score.
-                  </p>
-                  <h3>- Technologies:</h3>
-                  <p>&nbsp;&nbsp;Common Lisp</p>
+                  <div class="project-body">
+                    <h3>- Repository:</h3>
+                    <p>
+                      &nbsp;&nbsp;<a
+                        href="https://github.com/GoncaloV23/Horse-Game"
+                        target="_blank"
+                        >Click Here</a
+                      >
+                    </p>
+
+                    <h3>- Description:</h3>
+                    <p>
+                      &nbsp;&nbsp;The Horse Game is a variant of the Knight’s
+                      Tour problem, where the goal is to move a knight across a
+                      10x10 chessboard, visiting each square exactly once. Each
+                      square has a score, and the aim is to maximize the total
+                      score by finding the best path.
+                    </p>
+                    <p>
+                      &nbsp;&nbsp;This project includes two key features,
+                      players move the knight to visit all squares while
+                      maximizing the score, an AI uses state space search to
+                      find the optimal path that visits all squares and
+                      maximizes the score.
+                    </p>
+
+                    <h3>- Technologies:</h3>
+                    <div class="project-tags">
+                      <span>Common Lisp</span>
+                    </div>
+                  </div>
                 </details>
               </section>
             </div>

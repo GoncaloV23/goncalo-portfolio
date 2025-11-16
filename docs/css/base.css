@@ -126,8 +126,8 @@ details p {
   color: var(--color-secondary);
 }
 details p a {
-  display: inline-block;   
-  vertical-align: middle; 
+  display: inline-block;
+  vertical-align: middle;
   margin-top: 0;
 }
 
