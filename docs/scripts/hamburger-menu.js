@@ -5,10 +5,10 @@ const mobileClose = document.querySelector(".mobile-close");
 
 function toggleMenu() {
   if (!mobileNav) return;
-  
+
   const isOpen = mobileNav.classList.toggle("open");
   mobileNav.setAttribute("aria-hidden", String(!isOpen));
-  
+
   if (isOpen) {
     document.body.classList.add("no-scroll");
   } else {
@@ -23,7 +23,11 @@ if (hamburger && mobileNav && mobileMenuInner) {
   });
 
   document.addEventListener("click", (e) => {
-    if (mobileNav.classList.contains("open") && !mobileMenuInner.contains(e.target) && !hamburger.contains(e.target)) {
+    if (
+      mobileNav.classList.contains("open") &&
+      !mobileMenuInner.contains(e.target) &&
+      !hamburger.contains(e.target)
+    ) {
       toggleMenu();
     }
   });
