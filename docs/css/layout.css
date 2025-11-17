@@ -203,7 +203,7 @@ header nav.desktop-nav .item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .mobile-close {
