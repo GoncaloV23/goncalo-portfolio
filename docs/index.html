@@ -1,21 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-M7D3FFYGNY"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-M7D3FFYGNY");
-    </script>
-    
     <title>Gonçalo Vieira | Software Developer</title>
     <meta charset="UTF-8" />
     <meta
@@ -50,6 +35,21 @@
 
     <meta name="theme-color" content="slateblue" />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-M7D3FFYGNY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-M7D3FFYGNY");
+    </script>
+
     <!-- Favicon Links -->
     <link
       rel="icon"
@@ -80,6 +80,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/contact-form.js" defer></script>
   </head>
 
   <body>
@@ -109,13 +110,21 @@
           </div>
         </nav>
 
-        <!-- Mobile slide-in navigation -->
+        <!-- Mobile overlay navigation -->
         <nav class="mobile-nav" aria-hidden="true">
-          <div class="mobile-menu-items">
-            <div class="item"><a href="#about">About</a></div>
-            <div class="item"><a href="#skills">Skills</a></div>
-            <div class="item"><a href="#experience">Experience</a></div>
-            <div class="item"><a href="#projects">Projects</a></div>
+          <button class="mobile-close" aria-label="Close menu">&times;</button>
+          <div class="mobile-menu-inner">
+            <div class="mobile-menu-items">
+              <div class="item logo-item">
+                <a href="#profile"
+                  ><img src="img/logo.png" alt="Logo - Go to Profile"
+                /></a>
+              </div>
+              <div class="item"><a href="#about">About</a></div>
+              <div class="item"><a href="#skills">Skills</a></div>
+              <div class="item"><a href="#experience">Experience</a></div>
+              <div class="item"><a href="#projects">Projects</a></div>
+            </div>
           </div>
         </nav>
       </header>
@@ -140,7 +149,10 @@
                   target="_blank"
                   ><ion-icon name="person"></ion-icon> Resume</a
                 >
-                <a class="important" href="mailto:goncav3@gmail.com"
+                <a
+                  class="important"
+                  href="mailto:goncav3@gmail.com"
+                  target="_blank"
                   ><ion-icon name="mail-outline"></ion-icon> Contact me</a
                 >
               </section>
@@ -307,7 +319,7 @@
               <h1 class="bg box-shadow">Experience 💼</h1>
               <br />
               <section class="margin-left">
-                <details class="box-shadow">
+                <details class="box-shadow experience-card">
                   <summary>
                     <span class="arrow"
                       ><ion-icon name="caret-forward-outline"></ion-icon
@@ -343,13 +355,20 @@
                   </p>
 
                   <h3>- Technologies:</h3>
-                  <p>
-                    &nbsp;&nbsp;ASP.NET, C#, Entity Framework, SQL Server, Azure
-                    DevOps, Git, Postman, Swagger, Visual Studio Code...
-                  </p>
+                  <div class="project-tags">
+                    <span>ASP.NET</span>
+                    <span>C#</span>
+                    <span>Entity Framework</span>
+                    <span>SQL Server</span>
+                    <span>Azure DevOps</span>
+                    <span>Git</span>
+                    <span>Postman</span>
+                    <span>Swagger</span>
+                    <span>Visual Studio Code</span>
+                    <span>...</span>
+                  </div>
                 </details>
-
-                <details class="box-shadow">
+                <details class="box-shadow experience-card">
                   <summary>
                     <span class="arrow"
                       ><ion-icon name="caret-forward-outline"></ion-icon
@@ -383,12 +402,19 @@
                     recommendations for users.
                   </p>
                   <h3>- Technologies:</h3>
-                  <p>
-                    &nbsp;&nbsp;Github, Jira, Slack, Payload CMS (TypeScript and
-                    React), MongoDB, Render, Postman, Miro
-                  </p>
+                  <div class="project-tags">
+                    <span>Github</span>
+                    <span>Jira</span>
+                    <span>Slack</span>
+                    <span>Payload CMS</span>
+                    <span>TypeScript</span>
+                    <span>React</span>
+                    <span>MongoDB</span>
+                    <span>Render</span>
+                    <span>Postman</span>
+                  </div>
                 </details>
-                <details class="box-shadow">
+                <details class="box-shadow experience-card">
                   <summary>
                     <span class="arrow"
                       ><ion-icon name="caret-forward-outline"></ion-icon
@@ -418,12 +444,19 @@
                     insightful statistics to support business growth.
                   </p>
                   <h3>- Technologies:</h3>
-                  <p>
-                    &nbsp;&nbsp;ASP .NET, Razor (C# and HTML), CSS, JavaScript,
-                    Confluence, BitBucket, Jira, Stripe, SQLServer
-                  </p>
+                  <div class="project-tags">
+                    <span>ASP .NET</span>
+                    <span>Razor</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Confluence</span>
+                    <span>BitBucket</span>
+                    <span>Jira</span>
+                    <span>Stripe</span>
+                    <span>SQLServer</span>
+                  </div>
                 </details>
-                <details class="box-shadow">
+                <details class="box-shadow experience-card">
                   <summary>
                     <span class="arrow"
                       ><ion-icon name="caret-forward-outline"></ion-icon
@@ -453,7 +486,13 @@
                     registration process was smooth.
                   </p>
                   <h3>- Technologies:</h3>
-                  <p>&nbsp;&nbsp;HTML, CSS, JavaScript, Adobe Photoshop, SQL</p>
+                  <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Adobe Photoshop</span>
+                    <span>SQL</span>
+                  </div>
                 </details>
               </section>
             </div>
@@ -956,28 +995,106 @@
               </section>
             </div>
           </div>
+          <footer class="site-footer">
+            <div class="bg box-shadow footer-inner container">
+              <div class="footer-left">
+                <h2>Let's Connect</h2>
+                <p>
+                  I'm open to new opportunities and interesting projects. Use
+                  the contact form or email me directly and I'll get back to
+                  you.
+                </p>
+
+                <ul class="footer-contact">
+                  <li>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <a href="mailto:goncav3@gmail.com" target="_blank"
+                      >goncav3@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <ion-icon name="call-outline"></ion-icon> (+351) Send me an
+                    email
+                  </li>
+                  <li>
+                    <ion-icon name="location-outline"></ion-icon> Portugal
+                  </li>
+                </ul>
+
+                <div class="footer-social">
+                  <a
+                    href="mailto:goncav3@gmail.com"
+                    target="_blank"
+                    aria-label="Email"
+                  >
+                    <span class="social-circle"
+                      ><ion-icon name="mail-outline"></ion-icon
+                    ></span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/goncalosvieira/"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <span class="social-circle"
+                      ><ion-icon name="logo-linkedin"></ion-icon
+                    ></span>
+                  </a>
+                  <a
+                    href="https://github.com/GoncaloV23"
+                    target="_blank"
+                    aria-label="Github"
+                  >
+                    <span class="social-circle"
+                      ><ion-icon name="logo-github"></ion-icon
+                    ></span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="footer-right">
+                <h3>Send a message</h3>
+                <form
+                  class="footer-form"
+                  id="contactForm"
+                  action="https://formspree.io/f/movypnod"
+                  method="POST"
+                >
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="your.email@example.com"
+                    required
+                  />
+                  <textarea
+                    name="message"
+                    rows="4"
+                    placeholder="Tell me about your project or say hello!"
+                    required
+                  ></textarea>
+                  <button type="submit" class="btn footer-btn">
+                    Send Message
+                  </button>
+                  <div id="submitMessage" class="submit-message"></div>
+                </form>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="container-footer">
+                <div class="item-footer">
+                  <p>&copy; 2025 Gonçalo Vieira. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </main>
-      <footer>
-        <div class="container-footer">
-          <div class="item-footer">
-            <p>&copy; 2025 Gonçalo Vieira. All rights reserved.</p>
-          </div>
-          <div class="item-footer flex-footer">
-            <a href="mailto:goncav3@gmail.com"
-              ><ion-icon name="mail-outline"></ion-icon> goncav3@gmail.com</a
-            >
-            <a
-              href="https://www.linkedin.com/in/goncalosvieira/"
-              target="_blank"
-              ><ion-icon name="logo-linkedin"></ion-icon> Linkedin</a
-            >
-            <a href="https://github.com/GoncaloV23" target="_blank"
-              ><ion-icon name="logo-github"></ion-icon> Github</a
-            >
-          </div>
-        </div>
-      </footer>
     </div>
   </body>
 </html>

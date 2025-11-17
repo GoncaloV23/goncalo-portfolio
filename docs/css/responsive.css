@@ -27,6 +27,30 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .site-footer .footer-inner {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+
+  .site-footer .footer-right {
+    padding: 1rem;
+  }
+
+  .footer-contact li a {
+    text-align: left;
+  }
+
+  .footer-bottom .container-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  img:hover {
+    transform: scale(1) !important;
+  }
+
   .project-summary-content {
     height: 130px;
   }
@@ -179,6 +203,28 @@
 
   .mobile-nav {
     display: block;
+  }
+}
+
+/* Shrink mobile menu on compact heights */
+@media (max-height: 550px) {
+  .mobile-menu-items {
+    gap: 1rem;
+  }
+
+  .mobile-menu-items .logo-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .mobile-menu-items .logo-item img {
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+  .mobile-menu-items .item a {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+    width: 180px;
   }
 }
 
