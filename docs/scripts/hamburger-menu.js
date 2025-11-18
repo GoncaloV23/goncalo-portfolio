@@ -1,5 +1,3 @@
-// mobile-menu.js
-
 const hamburger = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobile-nav");
 const mobileMenuInner = document.querySelector(".mobile-menu-inner");
@@ -24,15 +22,12 @@ function preventScroll(e) {
   e.preventDefault();
 }
 
-// Only use 'click', it's simpler and works on desktop + mobile
 if (hamburger && mobileNav && mobileMenuInner) {
-  // Open menu
   hamburger.addEventListener("click", (e) => {
     e.stopPropagation();
     toggleMenu();
   });
 
-  // Close menu
   if (mobileClose) {
     mobileClose.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -40,14 +35,12 @@ if (hamburger && mobileNav && mobileMenuInner) {
     });
   }
 
-  // Close menu when clicking a link
   mobileNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       toggleMenu();
     });
   });
 
-  // Close menu if clicking outside
   document.addEventListener("click", (e) => {
     if (mobileNav.classList.contains("open") && !mobileMenuInner.contains(e.target) && !hamburger.contains(e.target)) {
       toggleMenu();

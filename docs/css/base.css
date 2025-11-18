@@ -215,6 +215,7 @@ img.profile,
 img#text-img {
   max-width: 100%;
   height: auto;
+  z-index: 5;
 }
 
 .important {
