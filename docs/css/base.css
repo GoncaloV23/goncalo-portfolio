@@ -247,8 +247,11 @@ main {
 }
 
 .profile {
-  border-radius: 40%;
   border: 0.9375rem lightsteelblue solid;
+  border-radius: 40%;              
+  object-fit: cover;                
+  overflow: hidden;                 
+  -webkit-tap-highlight-color: transparent;  
 }
 
 p > strong {
