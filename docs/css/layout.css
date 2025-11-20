@@ -30,6 +30,7 @@ header {
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
+  z-index: 5;
 }
 
 header nav.desktop-nav {
@@ -301,6 +302,12 @@ header nav.desktop-nav .item {
   border: 0.3rem solid var(--color-secondary);
   overflow: hidden;
   margin: 1rem auto;
+  transform: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0.75rem 0.75rem 0.75rem rgba(0, 0, 0, 0.6);
 }
 
 .project-card summary {
@@ -396,6 +403,12 @@ header nav.desktop-nav .item {
   border: 0.3rem solid var(--color-secondary);
   overflow: hidden;
   margin: 1rem auto;
+  transform: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0.75rem 0.75rem 0.75rem rgba(0, 0, 0, 0.6);
 }
 
 /* ---------- Footer styles ---------- */
@@ -577,4 +590,155 @@ header nav.desktop-nav .item {
 
 .footer-bottom .item-footer p {
   color: white;
+}
+
+/* ---------- Certifications Section ---------- */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+.certification-card {
+  position: relative;
+  background: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 0.3rem solid var(--color-secondary);
+  box-shadow: 0.5rem 0.5rem 0.5rem #00000080;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+}
+
+.certification-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0.75rem 0.75rem 0.75rem rgba(0, 0, 0, 0.6);
+}
+
+.cert-ribbon {
+  position: absolute;
+  top: 1.5rem;
+  right: -1.85rem;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: var(--color-primary);
+  padding: 0.3rem 2.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transform: rotate(45deg);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.cert-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  flex: 0 0 200px;
+}
+
+.cert-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.certification-card:hover .cert-image {
+  transform: scale(1.1);
+}
+
+.cert-content {
+  padding: 1.5rem 1.25rem;
+  background: white;
+  border-top: 0.3rem solid var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cert-title {
+  color: var(--color-primary);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.cert-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.cert-issuer,
+.cert-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cert-issuer ion-icon,
+.cert-date ion-icon {
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+}
+
+.cert-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-secondary);
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0.25rem 0.75rem rgba(106, 90, 205, 0.3);
+  width: 90%;
+  justify-content: center;
+  text-align: center;
+
+  width: 100%;
+  max-width: 260px;
+  justify-content: center;
+  text-align: center;
+  margin: 0.75rem auto 0  auto;
+  margin-top: auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.cert-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1.25rem rgba(106, 90, 205, 0.5);
+}
+
+.cert-button ion-icon {
+  font-size: 1.2rem;
 }

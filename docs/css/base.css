@@ -59,7 +59,7 @@ a {
 }
 
 a:hover {
-  background-color: grey;
+  background-color: rgb(128, 128, 128, 0.7);
   color: white;
   transform: scale(1.04);
 }
@@ -140,7 +140,7 @@ details[open] .arrow {
 }
 
 details:hover {
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.7);
   color: white;
   transform: scale(1.02);
 }
