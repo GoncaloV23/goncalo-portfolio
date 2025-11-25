@@ -248,6 +248,7 @@ main {
 
 .profile {
   border: 0.9375rem lightsteelblue solid;
+  width: 13.5rem;
   border-radius: 40%;              
   object-fit: cover;                
   overflow: hidden;                 
